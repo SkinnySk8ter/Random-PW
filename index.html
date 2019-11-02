@@ -4,36 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Password</title>
-
-    <link rel="stylesheet" href="style.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javasheet" href="style.js">
 </head>
 
 <body>
-<h1>Password Generator!!</h1>
+<h1 class="h1">Password Generator!!</h1>
 
-<p>Clink on the button to generate a brand new password free of charge!</p>
->
-                <input type="text" name="randomPassword" id="randomPassword">
-                <button id="generatePassword">Generate Password</button>
-                <script type="text/javascript">
-                function random_password_generate(max,min)
-                {
-                    var passwordChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#@!%&()/";
-                    var randPwLen = Math.floor(Math.random() * (max - min + 1)) + min;
-                    var randPassword = Array(randPwLen).fill(passwordChars).map(function(x) { return x[Math.floor(Math.random() * x.length)] }).join('');
-                    return randPassword;
-                }
-                document.getElementById("generatePassword").addEventListener("click", function(){
-                    random_password = random_password_generate(16,8);
-                    document.getElementById("randomPassword").value = random_password;
-                });
-                </script>
+<p class="p1"> Clink on the button to generate a brand new password free of charge! Dont't forget to set your own parameters by selecting below.</p>
+<br>
+<div class="container" id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>
 
-
-
-
-            
+<div class="container1">
+                <input class="textbox" type="text" name="randomPassword" id="randomPassword">
+                <button class="btn1" id="generatePassword">Generate Password</button>
                 
-    
+
+</div>   
 </body>
 </html>
