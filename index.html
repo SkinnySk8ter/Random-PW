@@ -14,14 +14,19 @@
 <p class="p1"> Clink on the button to generate a brand new password free of charge! Dont't forget to set your own parameters by selecting below.</p>
 <br>
 <div class="container" id="message">
-    <h3>Password must contain the following:</h3>
-    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-    <p id="number" class="invalid">A <b>number</b></p>
-    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    <h3 class="h3">Password must have at least 2/3!! Click wisely! Can also choose all three as well.</h3>
+    <p id="letter" class="invalid"><input type="checkbox" id="checkbox"> A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid"><input type="checkbox"> A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid"><input type="checkbox"> A <b>number</b></p>
+   
   </div>
 
-<div class="container1">
+  <div class="container1">
+      <input type="text" name="Userinput">
+      <button class="inputbtn" id="userinput">Acceptable?</button>
+  </div>
+
+<div class="container2">
                 <input class="textbox" type="text" name="randomPassword" id="randomPassword">
                 <button class="btn1" id="generatePassword">Generate Password</button>
                 
