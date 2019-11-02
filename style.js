@@ -4,8 +4,14 @@ var lowerCaseLetters = [a-z];
 var upperCaseLetter = [A-Z];
 var digits = [0-9];
 var diffsymb = ["#","@","!","%","&","(",")","/"]
+var alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#A!%&()/"
 
+function makepwd(){
+document.getElementById("checkbox").addEventListener("click", function(){
+if (i = 0; i===lowerCaseLetters.length || i === upperCaseLetter || i === digits || i === diffsymb; i++)
+})
 
+}
 
 
 
