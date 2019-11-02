@@ -1,13 +1,19 @@
 .h1 {
     text-align: center;
-    margin: 50px;
+    margin: 5px;
     padding: 5%;
+
+}
+
+.h3{
+    text-align: center;
+    padding-right: 60%;
 
 }
 
 .p1 {
     text-align: center;
-    margin: 35px;
+    margin: 20px;
     padding: 5%;
 
 }
@@ -20,6 +26,8 @@
 .container1{
     padding-left: 40%;
 
+}
 
-
+.container2{
+        padding-left: 40%;
 }
