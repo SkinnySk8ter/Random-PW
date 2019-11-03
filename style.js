@@ -14,7 +14,10 @@ var integers = document.getElementById("numbers");
 
 
 
-askuser();
+askuser(console.log);
+
+
+
 
 
             function askuser() {
@@ -22,15 +25,15 @@ askuser();
               while (pwlength < 8 || pwlength > 128){
                 alert("Invalid choice...TRY AGAIN")
 
-             pwlength = prompt("Password needs to be between 8 and 128 characters!")
+             pwlength = prompt("Password needs to be between 8 and 128 characters!");
               }
               var uppercase = prompt("Y/N for UPPERCASE letters?");
               if (uppercase === "Y"){
-                alert("Uppercase letters will be included");
+                confirm("Uppercase letters will be included. Incoming Question!");
               }
               else {
                 alert("lowercase letters incoming!");
-
+              }
                 var lowercase = prompt("How about lowercase? Y/N?");
                 if (lowercase === "Y"){
                   alert("lowercase letters coming right up!");
@@ -40,45 +43,63 @@ askuser();
                 }
                 var onetwo = prompt("Would you like to include integers/symbols in your password? Y/N?");
                 if (onetwo === "Y") {
-                  alert("Numbers Incoming!")
+                  alert("Numbers Incoming!");
                 }
                 else {
-                  alert("well that's unfortunate..")
+                  alert("well that's unfortunate..");
                 }
 
               }
 
+            //  var userResponse = askuser
+
+            //  var randompassword = generatePassword
+
+            //  var pwgen = document.getElementById("generatePassword").addEventListener("click", function(){
+            //   for (let i = 0; i < plength; i++) {
+            //           userPassword += passwordCharSet.charAt(
+            //             Math.floor(Math.random(lowerCaseLetters, upperCaseLetter, digits) * passwordCharSet.length
+
+             
+            //  var generatePassword  = document.getElementById("generatePassword").addEventListener("click", function(){
+            //   randompassword = askuser(128,8);
+            //   document.getElementById("randomPassword").value = random_password;
+
+            //   for (let i = 0; i < plength; i++) {
+            //       userPassword += passwordCharSet.charAt(
+            //         Math.floor(Math.random() * passwordCharSet.length)
+            //       );
+            //     }
+                
+              
+              
+              
+             
 
 
 
 
-            }
 
 
 
-
-            // function validateCheckbox() {
-            // userPassword = "";
-            // passwordCharSet = "";
             
-            // if (smallLetters.checked) {
-            //   passwordCharSet += lowerCaseLetters;
-            // }
-            // if (bigLetters.checked) {
-            //   passwordCharSet += upperCaseLetter;                   
-            
-            // if (integers.checked) {
-            //   passwordCharSet += digits;
-            // }
-            // passwordlength = Number(lengthInput.value);
+          
+
+      //  var generatePassword  = document.getElementById("generatePassword").addEventListener("click", function(){
+      //         random_password = random_password_generate(128,8);
+      //         document.getElementById("randomPassword").value = random_password;
+
+
+
+
+
+           
             
             // for (let i = 0; i < plength; i++) {
             //   userPassword += passwordCharSet.charAt(
             //     Math.floor(Math.random() * passwordCharSet.length)
             //   );
-            //   }
-
-        //       function random_password_generate(passwordChars)
+            // }
         // {
         //     var passwordChars = [lowerCaseLetters,upperCaseLetter,digits,diffsymb];
         //     var randPwLen = Math.floor(Math.random() * (max - min + 1)) + min;
