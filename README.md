@@ -1,4 +1,4 @@
-# homework3
+# homework3 - https://github.com/SkinnySk8ter/homework3
 assignment#3
 Third Homework Assignment
 
