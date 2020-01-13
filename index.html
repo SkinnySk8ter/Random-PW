@@ -23,8 +23,13 @@
   </div>
 
 <div class="container2">
- <input class="textbox" type="text" name="randomPassword" id="randomPassword">
- <button class="btn1" id="generatePassword">Generate Password</button>
+
+
+ <form name="pgenerate">
+  <input type="text" size=18 name="output">
+  <input type="button" value="Generate Password" onClick="populateform(this.form.thelength.value)"><br />
+  <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
+  </form>
         
 
 </div>   
