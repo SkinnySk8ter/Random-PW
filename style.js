@@ -8,57 +8,76 @@ var bigLetters = document.getElementById("upperCaseClick");
 var integers = document.getElementById("numbers");
 
 
+var keylist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789"
+var temp=''
+ 
+function generatepass(plength){
+temp=''
+for (i=0;i<plength;i++)
+temp+=keylist.charAt(Math.floor(Math.random()*keylist.length))
+return temp
+}
+ 
+function populateform(enterlength){
+document.pgenerate.output.value=generatepass(enterlength)
+}
 
 
 
 
 
 
-askuser(console.log);
 
 
 
 
 
-            function askuser() {
-              var pwlength = prompt("How many letters would you like in your code?");
-              while (pwlength < 8 || pwlength > 128){
-                alert("Invalid choice...TRY AGAIN")
 
-             pwlength = prompt("Password needs to be between 8 and 128 characters!");
-              }
-              var uppercase = prompt("Y/N for UPPERCASE letters?");
-              if (uppercase === "Y"){
-                confirm("Uppercase letters will be included. Incoming Question!");
-              }
-              else {
-                alert("lowercase letters incoming!");
-              }
-                var lowercase = prompt("How about lowercase? Y/N?");
-                if (lowercase === "Y"){
-                  alert("lowercase letters coming right up!");
-                }
-                else{
-                  alert("The choices are becoming more limited....");
-                }
-                var onetwo = prompt("Would you like to include integers/symbols in your password? Y/N?");
-                if (onetwo === "Y") {
-                  alert("Numbers Incoming!");
-                }
-                else {
-                  alert("well that's unfortunate..");
-                }
 
-              }
 
-            //  var userResponse = askuser
+            // function askuser() {
+            //   var pwlength = prompt("How many letters would you like in your code?");
+            //   while (pwlength < 8 || pwlength > 128){
+            //     alert("Invalid choice...TRY AGAIN")
+
+            //  pwlength = prompt("Password needs to be between 8 and 128 characters!");
+            //   }
+            //   var uppercase = prompt("Y/N for UPPERCASE letters?");
+            //   if (uppercase === "Y"){
+            //     confirm("Uppercase letters will be included. Incoming Question!");
+            //   }
+            //   else {
+            //     alert("lowercase letters incoming!");
+            //   }
+            //     var lowercase = prompt("How about lowercase? Y/N?");
+            //     if (lowercase === "Y"){
+            //       alert("lowercase letters coming right up!");
+            //     }
+            //     else{
+            //       alert("The choices are becoming more limited....");
+            //     }
+            //     var onetwo = prompt("Would you like to include integers/symbols in your password? Y/N?");
+            //     if (onetwo === "Y") {
+            //       alert("Numbers Incoming!");
+            //     }
+            //     else {
+            //       alert("well that's unfortunate..");
+            //     }
+
+            //   }
+
+
+
+
+            //  var userResponse = askuser()
 
             //  var randompassword = generatePassword
 
             //  var pwgen = document.getElementById("generatePassword").addEventListener("click", function(){
-            //   for (let i = 0; i < plength; i++) {
+            //   for (let i = 0; i < userResponse; i++) {
             //           userPassword += passwordCharSet.charAt(
-            //             Math.floor(Math.random(lowerCaseLetters, upperCaseLetter, digits) * passwordCharSet.length
+            //             Math.floor(Math.random(lowerCaseLetters, upperCaseLetter, digits) * passwordCharSet.length)
+            //           )}})
 
              
             //  var generatePassword  = document.getElementById("generatePassword").addEventListener("click", function(){
@@ -109,4 +128,4 @@ askuser(console.log);
         // document.getElementById("generatePassword").addEventListener("click", function(){
         //     random_password = random_password_generate(128,8);
         //     document.getElementById("randomPassword").value = random_password;
-        // });
+        // })
