@@ -10,6 +10,8 @@ var integers = document.getElementById("numbers");
 
 var keylist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789"
 var temp=''
+
+alert("pick any number between 8-128!!")
  
 function generatepass(plength){
 temp=''
